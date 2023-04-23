@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class FormComponent {
+export class LoginComponent {
   form: FormGroup;
   show: boolean;
   constructor(){
@@ -60,3 +59,4 @@ export class FormComponent {
   }
 
 }
+

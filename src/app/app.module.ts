@@ -2,11 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormComponent } from './form/form.component';
-import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
@@ -21,14 +17,13 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { TableComponent } from './table/table.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    FormComponent,
-    TableComponent
+    TableComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -48,8 +43,8 @@ import { TableComponent } from './table/table.component';
     MatTableModule,
     MatMenuModule,
     MatPaginatorModule,
-    MatSortModule
-  
+    MatSortModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
