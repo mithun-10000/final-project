@@ -21,13 +21,15 @@ import { HeaderComponent } from './sharedModule/component/header/header.componen
 import { FooterComponent } from './sharedModule/component/footer/footer.component';
 import { SharedModule } from './sharedModule/shared.module';
 import { PageNotFoundComponent } from './sharedModule/component/page-not-found/page-not-found.component';
+import { HighlighterDirective } from './sharedModule/directives/highlighter.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,
