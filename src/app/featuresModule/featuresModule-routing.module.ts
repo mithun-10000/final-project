@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
+    path:'',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
+  {
     path:'home',
-   component: HomepageComponent
+    component: HomepageComponent
   },
   {
     path:'dashboard',
-   component: DashboardComponent
+    component: DashboardComponent
   },
 ];
 
@@ -18,4 +23,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FeatureModuleRoutingModule { }
+export class FeaturesModuleRoutingModule { }

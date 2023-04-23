@@ -16,13 +16,16 @@ import {MatTableModule} from '@angular/material/table';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
-import { TableComponent } from './table/table.component';
 import { RouterModule } from '@angular/router';
+import { ShareModuleModule } from './sharedModule/sharedModule.module';
+import { HeaderComponent } from './sharedModule/component/header/header.component';
+import { FooterComponent } from './sharedModule/component/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent,
+    HeaderComponent,
+    FooterComponent
    
   ],
   imports: [
@@ -44,6 +47,7 @@ import { RouterModule } from '@angular/router';
     MatMenuModule,
     MatPaginatorModule,
     MatSortModule,
+    ShareModuleModule
 
   ],
   providers: [],

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FeatureModuleRoutingModule } from './feature-module-routing.module';
+import { FeaturesModuleRoutingModule } from './featuresModule-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -17,7 +17,7 @@ import { HomepageComponent } from './homepage/homepage.component';
   ],
   imports: [
     CommonModule,
-    FeatureModuleRoutingModule
+    FeaturesModuleRoutingModule
   ]
 })
-export class FeatureModuleModule { }
+export class FeaturesModuleModule { }
