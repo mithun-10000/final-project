@@ -17,16 +17,17 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { RouterModule } from '@angular/router';
-import { ShareModuleModule } from './sharedModule/sharedModule.module';
 import { HeaderComponent } from './sharedModule/component/header/header.component';
 import { FooterComponent } from './sharedModule/component/footer/footer.component';
+import { SharedModule } from './sharedModule/shared.module';
+import { PageNotFoundComponent } from './sharedModule/component/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
-   
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,7 @@ import { FooterComponent } from './sharedModule/component/footer/footer.componen
     MatMenuModule,
     MatPaginatorModule,
     MatSortModule,
-    ShareModuleModule
+    SharedModule
 
   ],
   providers: [],
