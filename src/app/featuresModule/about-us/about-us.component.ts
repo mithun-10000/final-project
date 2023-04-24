@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ServiceService } from 'src/app/sharedModule/service.service';
 
 @Component({
   selector: 'app-about-us',
@@ -7,6 +6,6 @@ import { ServiceService } from 'src/app/sharedModule/service.service';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-  constructor(private _service: ServiceService){}
+  constructor(){}
   
 }
